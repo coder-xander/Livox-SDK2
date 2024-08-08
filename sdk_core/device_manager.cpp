@@ -347,7 +347,7 @@ bool DeviceManager::CreateCommandChannel(const uint8_t dev_type, const HostNetIn
   return true;
 }
 
-bool DeviceManager::CreateCmdSocketAndAddDelegate(const uint8_t dev_type, const std::string& host_ip,
+bool DeviceManager::CreateCmdSocketAndAddDelegate(const std::uint8_t dev_type, const std::string& host_ip,
                                                   const uint16_t port, const HostSocketType type) {
   if (host_ip.empty() || port == 0 || port == kLogPort) {
     return true;
